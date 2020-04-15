@@ -1,9 +1,9 @@
-// 3スラッシュ＝TSが理解できる特別なもの
-/// <reference path="components/project-input.ts" />
-/// <reference path="components/project-list.ts" />
+// .js拡張子を付けることを忘れないように。
+import { ProjectInput } from './components/project-input'
+import { ProjectList } from './components/project-list'
 
-namespace App {    
-  new ProjectInput();
-  new ProjectList('active');
-  new ProjectList('finished');
-}
+new ProjectInput();
+new ProjectList('active');
+new ProjectList('finished');
+
+console.log('hi')
